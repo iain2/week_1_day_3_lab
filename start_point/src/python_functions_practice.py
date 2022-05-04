@@ -33,3 +33,15 @@ def number_to_short_month_name(num):
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul',
           'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
     return months[num - 1]
+
+def measure_volume(num):
+    return num ** 3 
+
+def reverse(string):
+    return string[::-1]
+
+def temp_convert(temp_f):
+    temp_c = temp_f - 32
+    num = 5/9
+    temp_c = temp_c * num
+    return temp_c

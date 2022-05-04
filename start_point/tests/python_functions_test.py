@@ -79,21 +79,27 @@ class TestPythonFunctionPractice(unittest.TestCase):
   #Further
 
   #Given the length of a side of a cube calculate the volume
-  @unittest.skip("delete this line to run the test")
+  
   def test_volume_of_cube(self):
     #add test code here
-    pass
+    volume = measure_volume(2)
+    self.assertEqual(8, volume)
+    
 
   #Given a String, return the String reversed
-  @unittest.skip("delete this line to run the test")
+  
   def test_reverse_string(self):
     #add test code here
-    pass
+    reversed_string = reverse("abc")
+    self.assertEqual("cba", reversed_string)
+    
 
   #Given a value in farenheit, convert this into celsius.
-  @unittest.skip("delete this line to run the test")
+  
   def test_fahrenheit_to_celsius(self):
     #add test code here
+    temp_c = temp_convert(32)
+    self.assertEqual(0, temp_c)
     pass
 
 
